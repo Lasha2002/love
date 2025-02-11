@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love, Maria ❤️</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ffb199, #ff4a6e);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #ff4a6e;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .question {
+            margin-top: 20px;
+        }
+        .btn {
+            background: #ff4a6e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+        }
+        .gift-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff4a6e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To My Beautiful Maria ❤️</h1>
+        <p>You are the light of my life, and I am so grateful for you.</p>
+        <p>Every moment with you is special, and I cherish our love forever.</p>
+        <div class="heart">❤️</div>
+        
+        <div class="question">
+            <p>Will you be my Valentine? 💖</p>
+            <button class="btn" onclick="showAnswer('Yes! I love you!')">Yes</button>
+            <button class="btn" onclick="showAnswer('Of course, my love!')">Definitely</button>
+        </div>
+        
+        <p id="answer" style="font-size: 20px; color: #ff4a6e; font-weight: bold;"></p>
+        
+        <a href="tita_flower.html" class="gift-link">🎁 Click here for your surprise gift! 🎁</a>
+    </div>
+
+    <script>
+        function showAnswer(answer) {
+            document.getElementById('answer').innerText = answer;
+        }
+    </script>
+</body>
+</html> 

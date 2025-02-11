@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for You! 🌸</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ffb199, #ff4a6e);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #ff4a6e;
+        }
+        .flower img {
+            width: 250px;
+            animation: bloom 2s infinite alternate;
+        }
+        @keyframes bloom {
+            from { transform: scale(0.9); }
+            to { transform: scale(1.1); }
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #ff4a6e;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>For My Love, Maria 🌸</h1>
+        <p>Here's a special flower just for you! 💖</p>
+        <div class="flower">
+            <img src="tita_flower.gif" alt="Tita Flower GIF">
+        </div>
+        <a href="#" class="back-link" onclick="goBack()">⬅ Go Back to Love Page</a>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
